@@ -1,0 +1,32 @@
+{
+    "name": "dynamikaweb/php-brazil-info",
+    "description": "helper with basic information about brazil",
+    "type": "yii2-extension",
+    "keywords": [
+        "dynamika",
+        "brazil",
+        "brasil"
+    ],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "RodrigoDornelles",
+            "email": "rodrigo@dornelles.me",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "http://github.com/dynamikaweb/php-brazil-info/issues",
+        "source": "http://github.com/dynamikaweb/php-brazil-info"
+    },
+    "require": {
+        "php": ">=5.5.0"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false,
+    "autoload": {
+        "psr-4": {
+            "dynamikaweb\\brazilinfo\\": "src"
+        }
+    }
+}
