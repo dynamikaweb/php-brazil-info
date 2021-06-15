@@ -5,36 +5,35 @@ namespace dynamikaweb\brazilinfo;
 /**
  * Education
  * 
- * @var array LIST_NAMES full name of Brazilian education
+ * @var array LIST_NAMES full name of Brazilian Education
  */
 class Education 
 {
-    const FUNDAMENTAL_INCOMPLETO = 1;
-    const FUNDAMENTAL_COMPLETO = 2;
-    const MEDIO_INCOMPLETO = 3;
-    const MEDIO_COMPLETO = 4;
-    const SUPERIOR_INCOMPLETO = 5;
-    const SUPERIOR_COMPLETO = 6;
-    const POS_GRADUACAO_INCOMPLETO = 7;
-    const POS_GRADUACAO_COMPLETO = 8;
-    const MESTRADO_INCOMPLETO = 9;
-    const MESTRADO_COMPLETO = 10;
-    const DOUTORADO_INCOMPLETO = 11;
-    const DOUTORADO_COMPLETO = 12;
 
-    const LIST_ESCOLARIDADE = [
-        self::FUNDAMENTAL_INCOMPLETO => 'Ensino Fundamental Incompleto',
-        self::FUNDAMENTAL_COMPLETO => 'Ensino Fundamental Completo',
-        self::MEDIO_INCOMPLETO => 'Ensino Médio Incompleto',
-        self::MEDIO_COMPLETO => 'Ensino Médio Completo',
-        self::SUPERIOR_INCOMPLETO => 'Ensino Superior Incompleto',
-        self::SUPERIOR_COMPLETO => 'Ensino Superior Completo',
-        self::POS_GRADUACAO_INCOMPLETO => 'Pós-Graduação Incompleto',
-        self::POS_GRADUACAO_COMPLETO => 'Pós-Graduação Completo',
-        self::MESTRADO_INCOMPLETO => 'Mestrado Incompleto',
-        self::MESTRADO_COMPLETO => 'Mestrado Completo',
-        self::DOUTORADO_INCOMPLETO => 'Doutorado Incompleto',
-        self::DOUTORADO_COMPLETO => 'Doutorado Completo',    
+    const LIST_NAMES = [
+        1 => 'Ensino Fundamental Incompleto',
+        2 => 'Ensino Fundamental Completo',
+        3 => 'Ensino Médio Incompleto',
+        4 => 'Ensino Médio Completo',
+        5 => 'Ensino Superior Incompleto',
+        6 => 'Ensino Superior Completo',
+        7 => 'Pós-Graduação Incompleto',
+        8 => 'Pós-Graduação Completo',
+        9 => 'Mestrado Incompleto',
+        10 => 'Mestrado Completo',
+        11 => 'Doutorado Incompleto',
+        12 => 'Doutorado Completo',    
     ];
+
+    /**
+     * Returns key value
+     *
+     * @param int $key
+     * @return string|null
+     */
+    public static function value($key)
+    {
+        return isset(self::LIST_NAMES[$key])?self::LIST_NAMES[$key]:null;
+    } 
 
 }
