@@ -17,13 +17,12 @@ class Occupation
         4 => 'Jornada',
         5 => 'Pesquisador',
         6 => 'Professor',
-        7 => 'Pós-Graduação Incompleto',
-        8 => 'Profis. Liberal/Autônomo',
-        9 => 'Servidor Público Municipal',
-        10 => 'Servidor Público Estadual',
-        11 => 'Servidor Público Federal',
-        12 => 'Não Informado',    
-        13 => 'Outro'
+        7 => 'Profis. Liberal/Autônomo',
+        8 => 'Servidor Público Municipal',
+        9 => 'Servidor Público Estadual',
+        10 => 'Servidor Público Federal',
+        11 => 'Não Informado',    
+        12 => 'Outro'
     ];
 
     /**
